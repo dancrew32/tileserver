@@ -14,7 +14,17 @@ Install [docker](https://docs.docker.com/install/linux/docker-ce/ubuntu/) and [d
 sudo apt-get install docker-compose
 ```
 
+## Ensure Fonts
+
+By default there are some special fonts that are required for rasterized tiles. Run this to install them:
+
+```
+make install_fonts
+```
+
 ## Build & Run
+
+This will `docker-compose up` the tileserver and expose it on http://localhost:8085. Feel free to change ports in `docker-compose.yml`.
 
 ```bash
 make up
